@@ -1,0 +1,37 @@
+{
+    "name": "eonx-com/easy-test",
+    "description": "Makes testing easier",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^7.2",
+        "symfony/console": "^4.4 || ^5.1.5",
+        "nesbot/carbon": "^2.22",
+        "nette/utils": "^3.1",
+        "symfony/intl": "^4.4 || ^5.1.5",
+        "symfony/http-kernel": "^4.4 || ^5.1.5",
+        "symfony/validator": "^4.4 || ^5.1.5",
+        "symplify/autowire-array-parameter": "^8.3.41"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.4 || ^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "EonX\\EasyTest\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "EonX\\EasyTest\\Tests\\": "tests"
+        }
+    },
+    "bin": [
+        "bin/easy-test"
+    ],
+    "extra": {
+        "branch-alias": {
+            "dev-master": "3.1-dev"
+        }
+    }
+}
